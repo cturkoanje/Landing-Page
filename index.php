@@ -24,14 +24,14 @@
 		You do not need to edit anything below this line.
 		The following will GET information about you from your Google+ profile
 	*/
-	$urlStructure = "https://www.googleapis.com/plus/v1/people/" . $google_user_id . "?key=". $google_api_key . "&userIp=" . $_SERVER['REMOVE_ADDR'];
+	$urlStructure = "https://www.googleapis.com/plus/v1/people/" . $google_user_id . "?key=". $google_api_key . "&userIp=" . $_SERVER['REMOTE_ADDR'];
 	$response = json_decode(file_get_contents($urlStructure), true);
 	
 	$name = $response['displayName'];
 	$aboutMe = $response['aboutMe'];
 	$profilePhoto = $response['image']['url'] . "0";
 	
-	$urlStructure = "https://www.googleapis.com/plus/v1/people/". $google_user_id . "/activities/public?key=" . $google_api_key . "&userIp=" . $_SERVER['REMOVE_ADDR'];
+	$urlStructure = "https://www.googleapis.com/plus/v1/people/". $google_user_id . "/activities/public?key=" . $google_api_key . "&userIp=" . $_SERVER['REMOTE_ADDR'];
 	$response = json_decode(file_get_contents($urlStructure), true);
 	
 	$recentPost = $response['items'][0]['title'];

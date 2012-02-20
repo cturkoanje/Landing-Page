@@ -1,0 +1,141 @@
+body {
+    background-image: url('/images/background.jpg');
+}
+
+#main h1 {
+    color:#97B4B4;
+    font-family: 'Aclonica', sans-serif;
+    font-size:50px;
+}
+
+#main p, a {
+    color:#6B6D6D;
+}
+#services {
+    height:60px;
+    margin-top:auto;
+    margin-bottom:5px;
+    
+}
+.resume {
+	height:75px;
+	margin-top:-20px;
+	margin-left:150px;
+}
+
+.profile_image {
+	float: left;
+	padding-right:10px;
+}
+.bio_text {
+	float:right;
+}
+
+#main {
+    width:600px;
+    height:460px;
+    margin:110px auto;
+    padding:15px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    background: #f7f7f7; /* Old browsers */
+    background: -moz-linear-gradient(top, #f7f7f7 0%, #aaaaaa 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#aaaaaa)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #f7f7f7 0%,#aaaaaa 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #f7f7f7 0%,#aaaaaa 100%); /* Opera11.10+ */
+    background: -ms-linear-gradient(top, #f7f7f7 0%,#aaaaaa 100%); /* IE10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#aaaaaa',GradientType=0 ); /* IE6-9 */
+    background: linear-gradient(top, #f7f7f7 0%,#aaaaaa 100%); /* W3C */
+    box-shadow: 1px 2px 6px rgba(0,0,0, 0.5);
+    -moz-box-shadow: 1px 2px 6px rgba(0,0,0, 0.5);
+    -webkit-box-shadow: 1px 2px 6px rgba(0,0,0, 0.5);
+    
+}
+
+#bio {
+    overflow:auto;
+    -webkit-overflow-scrolling: touch;
+    height:280px;
+    
+}
+
+#post {
+	padding-left:10px;
+	font-style: oblique;
+}
+	
+
+
+.jScrollPaneContainer {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.jScrollPaneTrack {
+	position: absolute;
+	cursor: pointer;
+	right: 0;
+	top: 0;
+	height: 100%;
+}
+.jScrollPaneDrag {
+	position: absolute;
+	background: #A4A4A4;
+	cursor: pointer;
+	overflow: hidden;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        border-radius: 50px;
+}
+.jScrollPaneDragTop {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+.jScrollPaneDragBottom {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+}
+a.jScrollArrowUp {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	text-indent: -2000px;
+	overflow: hidden;
+	/*background-color: #666;*/
+	height: 9px;
+}
+a.jScrollArrowUp:hover {
+	/*background-color: #f60;*/
+}
+
+a.jScrollArrowDown {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	right: 0;
+	text-indent: -2000px;
+	overflow: hidden;
+	/*background-color: #666;*/
+	height: 9px;
+}
+a.jScrollArrowDown:hover {
+	/*background-color: #f60;*/
+}
+a.jScrollActiveArrowButton, a.jScrollActiveArrowButton:hover {
+	/*background-color: #f00;*/
+}
+
+li.service-icon {
+    list-style-type: none;
+    float:left;
+    padding-right:15px;
+}
